@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>clipboard.jsの基本</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
+</head>
+<body onload="new Clipboard('.btn')">
+<h1>clipboard.jsの基本</h1>
+<section>
+  <h2>テキストエリア</h2>
+  <button class="btn" data-clipboard-target="#area1">Copy</button><br>
+  <textarea id="area1" cols="40" rows="8">
+aaaa aaaa aaaa
+bbbb bbbb bbbb
+cccc cccc cccc</textarea>
+</section>
+<section>
+  <h2>divタグ</h2>
+  <button class="btn" data-clipboard-target="#area2">Copy</button>
+  <div id="area2">
+    ああああ ああああ ああああ<br>
+    いいいい いいいい いいいい<br>
+    うううう うううう うううう
+  </div>
+</section>
+</body>
+</html>
